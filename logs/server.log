@@ -1,11 +1,10 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [243] using StatReload
-INFO:     Started server process [245]
+INFO:     Started reloader process [291] using StatReload
+INFO:     Started server process [293]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:40958 - "HEAD / HTTP/1.1" 405 Method Not Allowed
-INFO:     172.20.0.1:40936 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:44064 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -140,7 +139,8 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 11, 18), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:40926 - "GET /settings HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37142 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:44062 - "GET /settings HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 322, in jsonable_encoder
@@ -211,7 +211,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 330, in jsonable_encoder
     raise ValueError(errors) from e
 ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
-INFO:     172.20.0.1:40962 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37164 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -346,7 +346,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 11, 18), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:40966 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37174 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -481,7 +481,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 11, 18), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:40960 - "GET /settings HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37152 - "GET /settings HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 322, in jsonable_encoder
@@ -552,7 +552,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 330, in jsonable_encoder
     raise ValueError(errors) from e
 ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
-INFO:     172.20.0.1:40968 - "GET /settings HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37182 - "GET /settings HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 322, in jsonable_encoder
@@ -623,7 +623,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 330, in jsonable_encoder
     raise ValueError(errors) from e
 ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
-INFO:     172.20.0.1:40946 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:44074 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -758,7 +758,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 10, 20), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:40978 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37186 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -893,7 +893,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 10, 20), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:40994 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37192 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -1028,7 +1028,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 10, 20), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:33998 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37198 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -1163,7 +1163,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 11, 18), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:34008 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37202 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -1298,7 +1298,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 10, 20), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:33992 - "GET /settings HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37196 - "GET /settings HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 322, in jsonable_encoder
@@ -1369,7 +1369,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 330, in jsonable_encoder
     raise ValueError(errors) from e
 ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
-INFO:     172.20.0.1:34010 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37206 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -1504,7 +1504,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 11, 18), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:34028 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37232 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -1639,7 +1639,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 10, 20), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:34036 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37238 - "GET /stats/overview HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -1774,7 +1774,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 11, 18), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:34038 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37242 - "GET /stats/payments_daily?days=30 HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -1909,7 +1909,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/pymongo/message.py", line 762, in _op_msg
     return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: cannot encode object: datetime.date(2025, 10, 20), of type: <class 'datetime.date'>
-INFO:     172.20.0.1:34014 - "GET /settings HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37218 - "GET /settings HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 322, in jsonable_encoder
@@ -1980,7 +1980,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 330, in jsonable_encoder
     raise ValueError(errors) from e
 ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
-INFO:     172.20.0.1:34054 - "GET /settings HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37248 - "GET /settings HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 322, in jsonable_encoder
